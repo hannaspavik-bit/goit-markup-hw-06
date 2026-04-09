@@ -1033,3 +1033,14 @@ body {
   flex-direction: column;
   padding: 72px 24px 40px;
 }
+@media screen and (max-width: 767px) {
+  .team-list {
+    width: 100%;
+    align-items: center;
+  }
+
+  .team-item {
+    width: 264px;
+    max-width: 100%;
+  }
+}
