@@ -1098,3 +1098,11 @@ body {
     text-align: left;
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu.is-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
