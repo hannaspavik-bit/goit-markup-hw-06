@@ -191,7 +191,7 @@ a {
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .team-text {
-  padding: 32px 16px;
+  padding: 32px 24px;
 }
 .team-name {
   margin-bottom: 8px;
@@ -365,7 +365,9 @@ a {
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-left {
@@ -1042,5 +1044,16 @@ body {
   .team-item {
     width: 264px;
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-left {
+    margin-right: 0;
+  }
+
+  .footer-logo {
+    display: block;
+    margin: 0 auto 16px;
+    text-align: center;
   }
 }
