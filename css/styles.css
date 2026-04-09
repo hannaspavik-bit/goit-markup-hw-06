@@ -201,6 +201,17 @@ a {
   font-size: 16px;
   line-height: 1.5;
 } /* PORTFOLIO */
+
+.portfolio-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-title {
   margin-bottom: 72px;
   font-size: 36px;
@@ -313,10 +324,6 @@ a {
 }
 
 /* PORTFOLIO HOVER */
-.portfolio-item {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
-}
 
 .portfolio-item:hover {
   box-shadow:
@@ -825,11 +832,7 @@ a {
     gap: 64px 24px;
   }
 }
-.footer-container {
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
-}
+
 @media screen and (min-width: 768px) {
   .footer-container {
     max-width: 584px;
@@ -1015,35 +1018,6 @@ body {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 767px) {
-  .footer-left {
-    margin-right: 0;
-  }
-
-  .footer-logo {
-    display: block;
-    margin: 0 auto 16px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer-left {
-    margin-right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-text {
-    text-align: left;
-  }
-}
-.portfolio-item {
-  box-shadow:
-    0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
 @media screen and (min-width: 1158px) {
   .portfolio-item {
@@ -1085,11 +1059,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .logo {
-    margin-right: 76px;
-  }
-}
 .features-subtitle,
 .features-text,
 .team-title,
@@ -1112,5 +1081,24 @@ body {
   .portfolio-list {
     row-gap: 72px;
     column-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-left {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    display: block;
+    margin: 0 auto 16px;
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: left;
   }
 }
